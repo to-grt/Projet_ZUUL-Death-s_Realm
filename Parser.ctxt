@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Parser
+comment0.text=\r\n\ Cette\ classe\ sert\ \u00E0\ interpreter\ les\ mots\ rentrez\ dans\ la\ console\ en\ tant\ que\ commande\ de\ deux\ mots.\r\n\ Cette\ classe\ permet\ notamment\ de\ lire\ sur\ la\ console\ et\ de\ renvoyer\ (par\ le\ biais\ de\ la\ \r\n\ m\u00E9thode\ getCommand()\ )\ un\ objet\ de\ type\ Command\ si\ les\ deux\ mots\ sont\ reconnus\ en\ tant\ que\ commande.\r\n\ \r\n\ @author\ \ Michael\ Kolling\ and\ David\ J.\ Barnes\ +\ D.Bureau\ +\ T.Gueuret\r\n\ @version\ 2008.03.30\ +\ 2013.09.15\ +\ 2019.02.20\r\n
+comment1.params=
+comment1.target=Parser()
+comment1.text=\r\n\ Constructeur\ par\ defaut\ qui\ cree\ les\ 2\ objets\ prevus\ pour\ les\ attributs\r\n
+comment2.params=
+comment2.target=java.lang.String\ showCommands()
+comment2.text=\r\n\ Affiche\ la\ liste\ des\ commandes\ valide.\r\n\ @return\ un\ String\ contenant\ la\ liste\ des\ commandes\ valdies.\r\n
+comment3.params=pInputLine
+comment3.target=Command\ getCommand(java.lang.String)
+comment3.text=\r\n\ Fonction\ permettant\ de\ cr\u00E9er\ un\ objet\ Command\ si\ la\ ligne\ entr\u00E9e\ par\ l'utilisateur\ est\ une\ commande\ valide,\ sinon\ renvoie\ une\ commande\ avec\ un\ premier\ attribut\ aCommand\ nul.\r\n\ @param\ pInputLine\ un\ String\ contenant\ la\ ligne\ entr\u00E9e\ dans\ la\ barre\ de\ saisie.\r\n\ @return\ La\ prochaine\ commande\ de\ l'utilisateur.\r\n
+numComments=4

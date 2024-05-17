@@ -1,0 +1,64 @@
+go north
+take shield
+inventory
+eat shield
+drop shield
+go north
+look
+take shield
+inventory
+drop shield
+go north
+look
+take bow
+inventory
+drop bow
+go west
+look
+take apple
+inventory
+eat apple
+go secret
+look
+take bag
+inventory
+drop bag
+go north
+look
+take spear
+inventory
+drop spear
+go south
+go secret
+go east
+go south
+go west
+look
+take armor
+inventory
+drop armor
+go south
+look
+take sword
+inventory
+drop sword
+go east
+go up
+look
+take book
+inventory
+drop book
+go up
+look
+take beamer
+take cookie
+inventory
+eat cookie
+charge
+go down
+fire
+go down
+go west
+go secret
+look
+go north

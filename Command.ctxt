@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Command
+comment0.text=\r\n\ Classe\ Command,\ cette\ classe\ g\u00E8re\ les\ informations\ des\ objets\ de\ type\ Command,\ elle\ permet\ d'acceder\ aux\ attibut\ des\ instances\r\n\ de\ la\ classe\ mais\ elle\ sert\ aussi\ \u00E0\ savoir\ si\ c'est\ une\ commande\ valide\ ou\ encore\ si\ elle\ comporte\ 2\ mots.\r\n\ \r\n\ @author\ Th\u00E9o\ Gueuret\r\n\ @version\ 12/02/2019\r\n
+comment1.params=pCommandWord\ pSecondWord
+comment1.target=Command(java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Constructeur\ de\ la\ classe\ Command\r\n\ @param\ pCommandWord\ premi\u00E8re\ partie\ de\ la\ commande.\r\n\ @param\ pSecondWord\ \ deuxi\u00E8me\ partie\ de\ la\ commande.\r\n
+comment2.params=
+comment2.target=java.lang.String\ getCommandWord()
+comment2.text=\r\n\ accesseur\ de\ l'attribut\ aCommandWord\r\n\ @return\ un\ String\ contenant\ le\ premier\ mot\ de\ l'objte\ Command\ voulue.\r\n
+comment3.params=
+comment3.target=java.lang.String\ getSecondWord()
+comment3.text=\r\n\ accesseur\ de\ l'attribut\ aSecondWord.\r\n\ @return\ un\ String\ contenant\ le\ deuxi\u00E8me\ mot\ de\ l'objet\ Command\ voulue.\r\n
+comment4.params=
+comment4.target=boolean\ hasSecondWord()
+comment4.text=\r\n\ Fonction\ permettant\ de\ savoir\ si\ il\ y\ a\ pr\u00E9sence\ ou\ non\ d'un\ second\ mot\ dans\ la\ commande.\r\n\ @return\ un\ booolean\ permettant\ de\ savoir\ si\ le\ deuxi\u00E8me\ mot\ de\ la\ Command\ est\ nul\ ou\ non.\r\n
+comment5.params=
+comment5.target=boolean\ isUnknown()
+comment5.text=\r\n\ Fonction\ permettant\ de\ savoir\ si\ la\ commande\ est\ connue\ ou\ non.\r\n\ @return\ un\ boolean\ permettant\ de\ savoir\ si\ la\ Command\ est\ connue\ ou\ non.\r\n
+numComments=6

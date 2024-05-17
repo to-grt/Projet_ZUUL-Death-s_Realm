@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Game
+comment0.text=\r\n\ Classe\ Game,\ g\u00E8re\ les\ int\u00E9ractions\ entre\ les\ pi\u00E8ces\ et\ entre\ le\ joueur\ et\ le\ programme\r\n\ \r\n\ @author\ Th\u00E9o\ Gueuret\r\n\ @version\ 12/02/2019\r\n
+comment1.params=
+comment1.target=Game()
+comment1.text=\r\n\ Cr\u00E9er\ une\ instance\ de\ jeu\ (d\u00E9marre\ donc\ le\ jeu)\ dans\ une\ console.\r\n
+numComments=2

@@ -1,0 +1,178 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="fr">
+<head>
+<title>Source code</title>
+<link rel="stylesheet" type="text/css" href="../stylesheet.css" title="Style">
+</head>
+<body>
+<div class="sourceContainer">
+<pre><span class="sourceLineNo">001</span>import java.util.Collection;<a name="line.1"></a>
+<span class="sourceLineNo">002</span>import java.util.HashMap;<a name="line.2"></a>
+<span class="sourceLineNo">003</span><a name="line.3"></a>
+<span class="sourceLineNo">004</span>/** <a name="line.4"></a>
+<span class="sourceLineNo">005</span> * Classe permettant de gerer une collection d'item<a name="line.5"></a>
+<span class="sourceLineNo">006</span> *<a name="line.6"></a>
+<span class="sourceLineNo">007</span> * @author Théo Gueuret<a name="line.7"></a>
+<span class="sourceLineNo">008</span> * @version 10/04/2019<a name="line.8"></a>
+<span class="sourceLineNo">009</span> */<a name="line.9"></a>
+<span class="sourceLineNo">010</span>public class ItemList<a name="line.10"></a>
+<span class="sourceLineNo">011</span>{<a name="line.11"></a>
+<span class="sourceLineNo">012</span>    private HashMap&lt;String, Item&gt; aItemList;<a name="line.12"></a>
+<span class="sourceLineNo">013</span><a name="line.13"></a>
+<span class="sourceLineNo">014</span>    /**<a name="line.14"></a>
+<span class="sourceLineNo">015</span>     * Constructeur de la classe ItemList.<a name="line.15"></a>
+<span class="sourceLineNo">016</span>     */<a name="line.16"></a>
+<span class="sourceLineNo">017</span>    public ItemList()<a name="line.17"></a>
+<span class="sourceLineNo">018</span>    {<a name="line.18"></a>
+<span class="sourceLineNo">019</span>        this.aItemList = new HashMap&lt;String, Item&gt;();<a name="line.19"></a>
+<span class="sourceLineNo">020</span>    }<a name="line.20"></a>
+<span class="sourceLineNo">021</span>    <a name="line.21"></a>
+<span class="sourceLineNo">022</span>    /**<a name="line.22"></a>
+<span class="sourceLineNo">023</span>     * Accesseur de l'attribut aItemList de la classe ItemList.<a name="line.23"></a>
+<span class="sourceLineNo">024</span>     *  @return un HashMap contenant les Items de l'ItemList.<a name="line.24"></a>
+<span class="sourceLineNo">025</span>     */<a name="line.25"></a>
+<span class="sourceLineNo">026</span>    public HashMap getItemList() <a name="line.26"></a>
+<span class="sourceLineNo">027</span>    {<a name="line.27"></a>
+<span class="sourceLineNo">028</span>        return( this.aItemList );<a name="line.28"></a>
+<span class="sourceLineNo">029</span>    }<a name="line.29"></a>
+<span class="sourceLineNo">030</span>    <a name="line.30"></a>
+<span class="sourceLineNo">031</span>    /**<a name="line.31"></a>
+<span class="sourceLineNo">032</span>     * Fonction permettant de retourner un Item précis.<a name="line.32"></a>
+<span class="sourceLineNo">033</span>     * @param vName un String contenant le nom d'un Item existant.<a name="line.33"></a>
+<span class="sourceLineNo">034</span>     * @return un Item tel que le nom de celui-ci est le String passé en paramètre.<a name="line.34"></a>
+<span class="sourceLineNo">035</span>     */<a name="line.35"></a>
+<span class="sourceLineNo">036</span>    public Item getItem(final String vName) <a name="line.36"></a>
+<span class="sourceLineNo">037</span>    {<a name="line.37"></a>
+<span class="sourceLineNo">038</span>        return( this.aItemList.get( vName ) );<a name="line.38"></a>
+<span class="sourceLineNo">039</span>    }<a name="line.39"></a>
+<span class="sourceLineNo">040</span>    <a name="line.40"></a>
+<span class="sourceLineNo">041</span>    /**<a name="line.41"></a>
+<span class="sourceLineNo">042</span>     * Modificateur de l'attribut aItemList de la classe ItemList.<a name="line.42"></a>
+<span class="sourceLineNo">043</span>     * @param pItemList une HashMap de String et d'Items.<a name="line.43"></a>
+<span class="sourceLineNo">044</span>     */<a name="line.44"></a>
+<span class="sourceLineNo">045</span>    public void setItemList(final HashMap pItemList)<a name="line.45"></a>
+<span class="sourceLineNo">046</span>    {<a name="line.46"></a>
+<span class="sourceLineNo">047</span>        this.aItemList = pItemList;<a name="line.47"></a>
+<span class="sourceLineNo">048</span>    }<a name="line.48"></a>
+<span class="sourceLineNo">049</span>    <a name="line.49"></a>
+<span class="sourceLineNo">050</span>    /**<a name="line.50"></a>
+<span class="sourceLineNo">051</span>     * Fonction permettant d'ajouter un Item dans une ItemList<a name="line.51"></a>
+<span class="sourceLineNo">052</span>     * @param pItemName un String contenant le nom d'un Item.<a name="line.52"></a>
+<span class="sourceLineNo">053</span>     * @param pItem     un Item, son nom est le même que le celui contenu dans le String du précedent paramètre.<a name="line.53"></a>
+<span class="sourceLineNo">054</span>     */<a name="line.54"></a>
+<span class="sourceLineNo">055</span>    public void addItem(final String pItemName, final Item pItem)<a name="line.55"></a>
+<span class="sourceLineNo">056</span>    {<a name="line.56"></a>
+<span class="sourceLineNo">057</span>        this.aItemList.put(pItemName, pItem);<a name="line.57"></a>
+<span class="sourceLineNo">058</span>    }<a name="line.58"></a>
+<span class="sourceLineNo">059</span><a name="line.59"></a>
+<span class="sourceLineNo">060</span>    /**<a name="line.60"></a>
+<span class="sourceLineNo">061</span>     * Fonction permettant de retirer un Item d'une ItemList<a name="line.61"></a>
+<span class="sourceLineNo">062</span>     * @param pItemName un String contenant le nom de l'Item voulant être retiré<a name="line.62"></a>
+<span class="sourceLineNo">063</span>     */<a name="line.63"></a>
+<span class="sourceLineNo">064</span>    public void removeItem(final String pItemName)<a name="line.64"></a>
+<span class="sourceLineNo">065</span>    {<a name="line.65"></a>
+<span class="sourceLineNo">066</span>        this.aItemList.remove(pItemName);<a name="line.66"></a>
+<span class="sourceLineNo">067</span>    }<a name="line.67"></a>
+<span class="sourceLineNo">068</span>    <a name="line.68"></a>
+<span class="sourceLineNo">069</span>    /**<a name="line.69"></a>
+<span class="sourceLineNo">070</span>     * Fonction permettant de retourner une collection de toutes les values de l'attribut aItemList.<a name="line.70"></a>
+<span class="sourceLineNo">071</span>     * @return une Collecion d'Item correspondant a toutes les values de l'attribut aItemList. Ceci est possible <a name="line.71"></a>
+<span class="sourceLineNo">072</span>     * grâce au fait que aItemList est une HashMap et que certaines fonctions sont applicables sur celle-ci dont .values().<a name="line.72"></a>
+<span class="sourceLineNo">073</span>     */<a name="line.73"></a>
+<span class="sourceLineNo">074</span>    public Collection&lt;Item&gt; getValues()<a name="line.74"></a>
+<span class="sourceLineNo">075</span>    {<a name="line.75"></a>
+<span class="sourceLineNo">076</span>        return( this.aItemList.values() );<a name="line.76"></a>
+<span class="sourceLineNo">077</span>    }<a name="line.77"></a>
+<span class="sourceLineNo">078</span>    <a name="line.78"></a>
+<span class="sourceLineNo">079</span>    /**<a name="line.79"></a>
+<span class="sourceLineNo">080</span>     * Fonction permettant de récuperer la liste des items de la ItemList ainsi que leur poids sous forme de String<a name="line.80"></a>
+<span class="sourceLineNo">081</span>     * @return un String contenant la liste des Item contenus dans ItemList (via l'attribut aItemList).<a name="line.81"></a>
+<span class="sourceLineNo">082</span>     */<a name="line.82"></a>
+<span class="sourceLineNo">083</span>    public String getTotalString()<a name="line.83"></a>
+<span class="sourceLineNo">084</span>    {<a name="line.84"></a>
+<span class="sourceLineNo">085</span>        String vTotal = "";<a name="line.85"></a>
+<span class="sourceLineNo">086</span>        Collection&lt;Item&gt; vItems = this.aItemList.values();<a name="line.86"></a>
+<span class="sourceLineNo">087</span>        for( Item vItem : vItems ) {<a name="line.87"></a>
+<span class="sourceLineNo">088</span>            vTotal += "a " + vItem.getItemDescr() + "\n";<a name="line.88"></a>
+<span class="sourceLineNo">089</span>        }<a name="line.89"></a>
+<span class="sourceLineNo">090</span>        return( vTotal );<a name="line.90"></a>
+<span class="sourceLineNo">091</span>    }<a name="line.91"></a>
+<span class="sourceLineNo">092</span>    <a name="line.92"></a>
+<span class="sourceLineNo">093</span>    /**<a name="line.93"></a>
+<span class="sourceLineNo">094</span>     * Fonction retournant la somme du poids de tous les items de la ItemList.<a name="line.94"></a>
+<span class="sourceLineNo">095</span>     * @return un int symbolisant la somme des poids de tous les Items de la ItemList.<a name="line.95"></a>
+<span class="sourceLineNo">096</span>     */<a name="line.96"></a>
+<span class="sourceLineNo">097</span>    public int getTotalWeight()<a name="line.97"></a>
+<span class="sourceLineNo">098</span>    {<a name="line.98"></a>
+<span class="sourceLineNo">099</span>        int vResult = 0;<a name="line.99"></a>
+<span class="sourceLineNo">100</span>        Collection&lt;Item&gt; vItems = this.aItemList.values();<a name="line.100"></a>
+<span class="sourceLineNo">101</span>        for( Item vItem : vItems) {<a name="line.101"></a>
+<span class="sourceLineNo">102</span>            vResult += vItem.getPoids();<a name="line.102"></a>
+<span class="sourceLineNo">103</span>        }<a name="line.103"></a>
+<span class="sourceLineNo">104</span>        return( vResult );<a name="line.104"></a>
+<span class="sourceLineNo">105</span>    }<a name="line.105"></a>
+<span class="sourceLineNo">106</span>}<a name="line.106"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+</div>
+</body>
+</html>

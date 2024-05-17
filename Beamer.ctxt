@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=Beamer
+comment0.text=\r\n\ La\ classe\ Beamer\ est\ une\ classe\ decrivant\ le\ fonctionnement\ de\ l'Item\ Beamer.\r\n\ @author\ Th\u00E9o\ GUEURET\r\n\ @version\ \ 05/05/2019\r\n
+comment1.params=pDescr\ pPoids\ pName\ pIsEatable\ pEffect\ pStrenght\ pDefense\ pMiss
+comment1.target=Beamer(java.lang.String,\ int,\ java.lang.String,\ boolean,\ java.lang.String,\ int,\ int,\ int)
+comment2.params=
+comment2.target=Room\ getMemorizedRoom()
+comment2.text=\r\n\ Accesseur\ de\ l'attribut\ aMemorizedRoom.\r\n\ @return\ un\ Room\ \:\ la\ Room\ qui\ \u00E0\ \u00E9t\u00E9\ m\u00E9moris\u00E9e\ dans\ le\ Beamer.\r\n
+comment3.params=
+comment3.target=boolean\ getIsCharged()
+comment3.text=\r\n\ Accesseur\ de\ l'attribut\ aIsCharged.\r\n\ @return\ un\ boolean\ d\u00E9crivant\ si\ le\ Beamer\ \u00E0\ \u00E9t\u00E9\ charg\u00E9\ ou\ non.\r\n
+comment4.params=pMemorizedRoom
+comment4.target=void\ setMemorizedRoom(Room)
+comment4.text=\r\n\ Modificateur\ de\ l'attribut\ aMemorizedRoom\r\n\ @param\ pMemorizedRoom\ une\ Room\ \u00E9tant\ celle\ qui\ va\ \u00EAtre\ m\u00E9moris\u00E9e\ par\ le\ Beamer.\r\n
+comment5.params=pIsCharged
+comment5.target=void\ setIsCharged(boolean)
+comment5.text=\r\n\ Modificateur\ de\ l'attribut\ aIsCharged\r\n\ @param\ pIsCharged\ un\ boolean\ devenant\ la\ nouvelle\ valeur\ de\ l'attribut\ aIsCharged\r\n
+comment6.params=pRoom
+comment6.target=void\ charge(Room)
+comment6.text=\r\n\ Fonction\ repr\u00E9sentant\ l'action\ de\ charger\ un\ Beamer.\r\n\ @param\ pRoom\ une\ Room\ \:\ celle\ qui\ va\ \u00EAtre\ m\u00E9moris\u00E9e\ par\ le\ Beamer.\r\n
+comment7.params=
+comment7.target=Room\ fire()
+comment7.text=\r\n\ Fonction\ repr\u00E9sentant\ l'action\ d'utiliser\ un\ Beamer.\r\n\ @return\ une\ Room\ \:\ la\ Room\ dans\ laquelle\ le\ PLayer\ ayant\ activ\u00E9\ le\ Beamer\ va\ \u00EAtre\ d\u00E9plac\u00E9.\r\n
+numComments=8
